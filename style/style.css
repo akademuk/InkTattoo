@@ -2,7 +2,7 @@
 @import url(c:\Users\Oleg\Desktop\Сайты для портфолио\InkTattoo\style\bootstrap-grid.min.css);
 @import url(c:\Users\Oleg\Desktop\Сайты для портфолио\InkTattoo\style\bootstrap.min.css);
 .header {
-  background: url(../../images/header_banner.png) no-repeat;
+  background: url(../images/header_banner.png) no-repeat;
   background-size: cover;
   background-position: top;
   padding-top: 27px;
@@ -110,7 +110,7 @@
 
 .about_us_tittle {
   width: 50%;
-  background: url(../../images/img_studio_bg.png) 100% 100% no-repeat;
+  background: url(../images/img_studio_bg.png) 100% 100% no-repeat;
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -163,7 +163,7 @@ h2 {
 
 .about_us_information_tittle::before {
   content: "";
-  background: url(../../images/tattoo_design.png) no-repeat;
+  background: url(../images/tattoo_design.png) no-repeat;
   width: 84px;
   height: 58px;
   display: block;
@@ -191,36 +191,54 @@ h2 {
   line-height: 28px;
 }
 
-.aboout_us_gallery .container {
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.aboout_us_gallery .container .row {
-  width: 100%;
-}
-
 .aboout_us_gallery_container {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.aboout_us_gallery_container img {
+  width: 100%;
+}
+
+.aboout_us_gallery_container:hover {
+  cursor: pointer;
+}
+
+.aboout_us_gallery_container:hover .gallery_icon {
+  opacity: 1;
+  background: rgba(204, 200, 184, 0.6);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .gallery_icon {
-  width: 100%;
-  height: 100%;
-  background: red;
+  margin: 0;
+  padding: 0;
   position: absolute;
   text-align: center;
+  padding-top: calc(100% - 60%);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .gallery_icon_icon:nth-of-type(1) {
   display: block;
+  margin-bottom: 20px;
+}
+
+.gallery_icon_icon:nth-of-type(3) {
+  margin: 0 30px;
+}
+
+.gallery_icon_icon i {
+  color: #000;
 }
 
 @media (max-width: 768px) {
@@ -231,8 +249,16 @@ h2 {
   .about_us .about_us_container {
     padding-top: 20px;
   }
+  .about_us {
+    height: auto;
+  }
+  .about_us_container {
+    padding: 0;
+    height: 49vh;
+  }
   .about_us_tittle {
     position: absolute;
+    background-position: bottom;
     width: 100%;
     top: 0;
     left: 0;
@@ -278,12 +304,9 @@ h2 {
 }
 
 @media (max-width: 576px) {
-  .about_us {
-    height: auto;
-  }
-  .about_us .about_us_container {
+  .about_us_container {
     padding: 0;
-    min-height: 50vh;
+    height: 60vh;
   }
   .about_us_information {
     min-height: 30vh;
@@ -302,6 +325,16 @@ h2 {
     font-size: 1.5rem;
     border: 2px solid #000;
     padding: 25px 45px;
+  }
+  .gallery_icon {
+    padding-top: calc(100% - 80%);
+  }
+  .gallery_icon_icon:nth-of-type(1) {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .gallery_icon_icon:nth-of-type(3) {
+    margin: 0 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
