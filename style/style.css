@@ -308,7 +308,8 @@ h2 {
             flex-direction: column;
   }
   .aboout_us_gallery_container {
-    width: 50%;
+    height: 80px;
+    background-size: cover;
   }
   .aboout_us_gallery_container img {
     width: 100%;
@@ -320,6 +321,7 @@ h2 {
     font-size: 0.5rem;
   }
   .about_us_tittle {
+    height: 10vh;
     padding: 20px 0;
     min-width: 100%;
     text-align: center;

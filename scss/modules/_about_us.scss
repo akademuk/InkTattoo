@@ -150,7 +150,8 @@ h2 {
     }
   }
   .aboout_us_gallery_container {
-    width: 50%;
+    height: 80px;
+    background-size: cover;
     img {
       width: 100%;
     }
@@ -164,6 +165,7 @@ h2 {
     }
   }
   .about_us_tittle {
+    height: 10vh;
     padding: 20px 0;
     min-width: 100%;
     text-align: center;
