@@ -78,11 +78,11 @@ h2 {
     width: 100%;
     height: 25%;
   }
-  &:active,
   &:hover {
     cursor: pointer;
     .gallery_icon {
       opacity: 1;
+      z-index: 99;
       background: rgba(204, 200, 184, 0.6);
       transition: all 0.5s linear;
     }
@@ -94,6 +94,7 @@ h2 {
   align-items: center;
   justify-content: center;
   opacity: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
   transition: all 0.5s linear;
