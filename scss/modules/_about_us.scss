@@ -79,6 +79,7 @@ h2 {
   img {
     width: 100%;
   }
+  &:active,
   &:hover {
     cursor: pointer;
     .gallery_icon {
@@ -150,11 +151,7 @@ h2 {
     }
   }
   .aboout_us_gallery_container {
-    height: 80px;
-    background-size: cover;
-    img {
-      width: 100%;
-    }
+    height: auto;
   }
   .gallery_icon_icon {
     &:nth-of-type(3) {
@@ -165,8 +162,7 @@ h2 {
     }
   }
   .about_us_tittle {
-    height: 10vh;
-    padding: 20px 0;
+    padding: 50px 0;
     min-width: 100%;
     text-align: center;
   }

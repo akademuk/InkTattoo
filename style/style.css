@@ -224,11 +224,11 @@ h2 {
   width: 100%;
 }
 
-.aboout_us_gallery_container:hover {
+.aboout_us_gallery_container:active, .aboout_us_gallery_container:hover {
   cursor: pointer;
 }
 
-.aboout_us_gallery_container:hover .gallery_icon {
+.aboout_us_gallery_container:active .gallery_icon, .aboout_us_gallery_container:hover .gallery_icon {
   opacity: 1;
   background: rgba(204, 200, 184, 0.6);
   -webkit-transition: all 0.5s linear;
@@ -308,11 +308,7 @@ h2 {
             flex-direction: column;
   }
   .aboout_us_gallery_container {
-    height: 80px;
-    background-size: cover;
-  }
-  .aboout_us_gallery_container img {
-    width: 100%;
+    height: auto;
   }
   .gallery_icon_icon:nth-of-type(3) {
     margin: 0 10px;
@@ -321,8 +317,7 @@ h2 {
     font-size: 0.5rem;
   }
   .about_us_tittle {
-    height: 10vh;
-    padding: 20px 0;
+    padding: 50px 0;
     min-width: 100%;
     text-align: center;
   }
