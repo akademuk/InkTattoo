@@ -121,6 +121,10 @@
   }
 }
 
+.about_us {
+  height: 100vh;
+}
+
 .about_us .container {
   max-width: 100%;
   padding: 0;
@@ -221,7 +225,9 @@ h2 {
 }
 
 .aboout_us_gallery_container img {
-  width: 100%;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
 }
 
 .aboout_us_gallery_container:active, .aboout_us_gallery_container:hover {
@@ -307,9 +313,6 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .aboout_us_gallery_container {
-    height: auto;
-  }
   .gallery_icon_icon:nth-of-type(3) {
     margin: 0 10px;
   }
@@ -348,6 +351,8 @@ h2 {
 
 @media (max-width: 450px) {
   .about_us_tittle {
+    min-height: 20vh;
+    padding: 0;
     margin-bottom: 20px;
   }
   .about_us_information_tittle {
@@ -356,6 +361,9 @@ h2 {
   }
   .about_us_information_tittle::before {
     display: none;
+  }
+  .aboout_us_gallery_container img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
