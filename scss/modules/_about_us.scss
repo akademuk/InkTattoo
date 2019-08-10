@@ -9,14 +9,12 @@
 }
 .about_us_tittle {
   background: url(../images/img_studio_bg.png) no-repeat;
+  padding: 200px 0;
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.col-md-6 {
-  padding: 0;
 }
 h2 {
   color: $black01;
@@ -137,7 +135,7 @@ h2 {
 }
 @media (max-width: 768px) {
   .about_us_tittle {
-    height: 25vh;
+    min-height: 25vh;
     margin-bottom: 30px;
   }
   h2 {

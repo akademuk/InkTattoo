@@ -1,11 +1,25 @@
 @charset "UTF-8";
 @import url(c:\Users\Oleg\Desktop\Сайты для портфолио\InkTattoo\style\bootstrap-grid.min.css);
 @import url(c:\Users\Oleg\Desktop\Сайты для портфолио\InkTattoo\style\bootstrap.min.css);
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
 .row {
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.wrapper {
+  width: 60%;
 }
 
 .header {
@@ -132,6 +146,7 @@
 
 .about_us_tittle {
   background: url(../images/img_studio_bg.png) no-repeat;
+  padding: 200px 0;
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -143,10 +158,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.col-md-6 {
-  padding: 0;
 }
 
 h2 {
@@ -295,7 +306,7 @@ h2 {
 
 @media (max-width: 768px) {
   .about_us_tittle {
-    height: 25vh;
+    min-height: 25vh;
     margin-bottom: 30px;
   }
   h2 {
@@ -365,4 +376,137 @@ h2 {
     display: none;
   }
 }
+
+/*--------------Testimonial------------------*/
+.testimonial {
+  background: url(../../images/testimotian-banner.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.testimonial_quote {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+}
+
+.testimonial_quote::after {
+  content: "";
+  display: block;
+  background: url(../../images/testumation-icon-right.png) no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  margin-left: 101%;
+}
+
+.testimonial_quote::before {
+  content: "";
+  display: block;
+  background: url(../../images/testumation-icon-left.png) no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  margin-left: -50px;
+}
+
+.testimonial_quote_autor {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.testimonial_quote_autor::after {
+  content: "-";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10px;
+  height: 2px;
+  margin-left: 5px;
+}
+
+.testimonial_quote_autor::before {
+  content: "-";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10px;
+  height: 2px;
+}
+
+@media (max-width: 992px) {
+  .testimonial_quote {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial {
+    height: 200px;
+    padding-top: 50px;
+  }
+  .testimonial_quote {
+    font-size: 1rem;
+  }
+  .testimonial_quote::before {
+    width: 30px;
+    height: 30px;
+    margin-left: -25px;
+  }
+  .testimonial_quote::after {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial {
+    padding: 20px;
+    height: auto;
+  }
+  .testimonial .wrapper {
+    width: 80%;
+  }
+  .testimonial_quote {
+    font-size: 0.8rem;
+  }
+  .testimonial_quote::before {
+    width: 20px;
+    height: 20px;
+    margin-left: -25px;
+  }
+  .testimonial_quote::after {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/*--------------Testimonial------------------*/
 /*# sourceMappingURL=style.css.map */

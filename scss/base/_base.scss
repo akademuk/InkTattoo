@@ -1,4 +1,15 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
 .row {
   width: 100%;
   align-items: center;
+}
+.wrapper {
+  width: 60%;
 }
