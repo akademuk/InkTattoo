@@ -15,7 +15,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   font-style: italic;
-  color: $white;
+  color: #f2efe5;
   text-align: center;
   &::after {
     content: "";
@@ -37,24 +37,25 @@
   }
 }
 .testimonial_quote_autor {
+  color: #f2efe5;
+  font-family: "Times New Roman", Times, serif;
   font-size: 0.8rem;
-  font-style: italic;
-  color: $white;
-  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
   display: flex;
   justify-content: flex-end;
+  align-items: baseline;
   &::after {
     content: "-";
     display: flex;
-    width: 10px;
-    height: 2px;
+    font-size: 1.1rem;
     margin-left: 5px;
   }
   &::before {
     content: "-";
     display: flex;
-    width: 10px;
-    height: 2px;
+    font-size: 1.1rem;
+    margin-right: 5px;
   }
 }
 @media (max-width: 992px) {
@@ -99,6 +100,15 @@
       width: 20px;
       height: 20px;
     }
+  }
+  .testimonial_quote_autor {
+    font-size: 0.6rem;
+  }
+  &::after {
+    font-size: 0.5rem;
+  }
+  &::before {
+    font-size: 0.5rem;
   }
 }
 /*--------------Testimonial------------------*/

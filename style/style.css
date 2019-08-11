@@ -22,6 +22,19 @@ body {
   width: 60%;
 }
 
+img {
+  min-width: 100%;
+}
+
+h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #000;
+}
+
 .header {
   background: url(../images/header_banner.png) center/cover no-repeat;
   padding-top: 27px;
@@ -377,6 +390,228 @@ h2 {
   }
 }
 
+/*----------------TEAM---------------------*/
+.taem .container {
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.taem .row {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+.team_height {
+  height: 500px;
+}
+
+.team_container {
+  background: url(../../images/team_team_banner.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.team_container_img {
+  padding: 0;
+  -ms-flex-negative: 6;
+      flex-shrink: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team_container_description {
+  width: 100%;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  background: #ccc8b6;
+  padding: 124px 54px 0 48px;
+  text-align: center;
+}
+
+.team_container_description_text {
+  color: #000;
+  font-family: OpenSans;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.team_container_description_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team_container_icon {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.team_container_icon:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.team_container_email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team_container_email_tittle {
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.team_container_email_text {
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.email {
+  border: 1px solid #94928c;
+  padding-left: 20px;
+  outline: none;
+  margin-bottom: 22px;
+  width: 100%;
+}
+
+input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+input:-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+input::-ms-input-placeholder {
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.submit {
+  width: 100%;
+  border: none;
+  background: #9a977a;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 12px 0;
+  outline: none;
+}
+
+@media (max-width: 1200px) {
+  .team_height {
+    height: 380px;
+  }
+  .team_container h2 {
+    border: 5px solid #000;
+  }
+  .team_container_description {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .team_container {
+    padding: 20px 0;
+    height: 200px;
+  }
+  .team_container h2 {
+    padding: 15px 30px;
+  }
+  .team_container_email {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 50px 0;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team_height {
+    height: 300px;
+  }
+  .team_container {
+    height: 150px;
+  }
+  .team_container_description {
+    padding-top: 15px;
+  }
+  .team_container_description_text {
+    font-size: 0.5rem;
+  }
+  .team_container_icon {
+    margin-bottom: 25px;
+  }
+}
+
+/*----------------TEAM---------------------*/
 /*--------------Testimonial------------------*/
 .testimonial {
   background: url(../../images/testimotian-banner.png) no-repeat;
@@ -405,7 +640,7 @@ h2 {
   font-size: 1.5rem;
   font-weight: 600;
   font-style: italic;
-  color: #fff;
+  color: #f2efe5;
   text-align: center;
 }
 
@@ -430,16 +665,20 @@ h2 {
 }
 
 .testimonial_quote_autor {
+  color: #f2efe5;
+  font-family: "Times New Roman", Times, serif;
   font-size: 0.8rem;
-  font-style: italic;
-  color: #fff;
-  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .testimonial_quote_autor::after {
@@ -447,8 +686,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 10px;
-  height: 2px;
+  font-size: 1.1rem;
   margin-left: 5px;
 }
 
@@ -457,8 +695,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 10px;
-  height: 2px;
+  font-size: 1.1rem;
+  margin-right: 5px;
 }
 
 @media (max-width: 992px) {
@@ -505,6 +743,15 @@ h2 {
   .testimonial_quote::after {
     width: 20px;
     height: 20px;
+  }
+  .testimonial_quote_autor {
+    font-size: 0.6rem;
+  }
+  ::after {
+    font-size: 0.5rem;
+  }
+  ::before {
+    font-size: 0.5rem;
   }
 }
 

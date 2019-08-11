@@ -1,0 +1,151 @@
+/*----------------TEAM---------------------*/
+.taem {
+  .container {
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .row {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+  }
+}
+.team_height {
+  height: 500px;
+}
+.team_container {
+  background: url(../../images/team_team_banner.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+}
+.team_container_img {
+  padding: 0;
+  flex-shrink: 6;
+  display: flex;
+}
+.team_container_description {
+  width: 100%;
+  flex-shrink: 2;
+  background: #ccc8b6;
+  padding: 124px 54px 0 48px;
+  text-align: center;
+}
+.team_container_description_text {
+  color: $black;
+  font-family: OpenSans;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.team_container_description_icon {
+  display: flex;
+  justify-content: space-between;
+}
+.team_container_icon {
+  color: $black;
+  text-decoration: none;
+  transition: all 1s;
+  &:hover {
+    transform: rotate(360deg);
+    transition: all 1s;
+  }
+}
+.team_container_email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team_container_email_tittle {
+  color: $black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.team_container_email_text {
+  color: $black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.email {
+  border: 1px solid #94928c;
+  padding-left: 20px;
+  outline: none;
+  margin-bottom: 22px;
+  width: 100%;
+}
+input::placeholder {
+  text-transform: uppercase;
+  color: $nightRider;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.submit {
+  width: 100%;
+  border: none;
+  background: $greyOlive;
+  color: $white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 12px 0;
+  outline: none;
+}
+@media (max-width: 1200px) {
+  .team_height {
+    height: 380px;
+  }
+  .team_container {
+    h2 {
+      border: 5px solid $black;
+    }
+  }
+  .team_container_description {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .team_container {
+    padding: 20px 0;
+    height: 200px;
+    h2 {
+      padding: 15px 30px;
+    }
+  }
+  .team_container_email {
+    align-items: baseline;
+    padding: 50px 0;
+    height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .team_height {
+    height: 300px;
+  }
+  .team_container {
+    height: 150px;
+  }
+  .team_container_description {
+    padding-top: 15px;
+  }
+  .team_container_description_text {
+    font-size: 0.5rem;
+  }
+  .team_container_icon {
+    margin-bottom: 25px;
+  }
+}
+/*----------------TEAM---------------------*/

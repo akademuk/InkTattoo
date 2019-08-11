@@ -13,3 +13,14 @@ body {
 .wrapper {
   width: 60%;
 }
+img {
+  min-width: 100%;
+}
+h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $black;
+}
