@@ -408,7 +408,7 @@ h2 {
 }
 
 .team_container {
-  background: url(../../images/team_team_banner.png) no-repeat;
+  background: url(../images/team_team_banner.png) no-repeat;
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -614,7 +614,7 @@ input::placeholder {
 /*----------------TEAM---------------------*/
 /*--------------Testimonial------------------*/
 .testimonial {
-  background: url(../../images/testimotian-banner.png) no-repeat;
+  background: url(../images/testimotian-banner.png) no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -647,7 +647,7 @@ input::placeholder {
 .testimonial_quote::after {
   content: "";
   display: block;
-  background: url(../../images/testumation-icon-right.png) no-repeat;
+  background: url(../images/testumation-icon-right.png) no-repeat;
   background-size: contain;
   width: 50px;
   height: 50px;
@@ -657,7 +657,7 @@ input::placeholder {
 .testimonial_quote::before {
   content: "";
   display: block;
-  background: url(../../images/testumation-icon-left.png) no-repeat;
+  background: url(../images/testumation-icon-left.png) no-repeat;
   background-size: contain;
   width: 50px;
   height: 50px;

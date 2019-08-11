@@ -1,6 +1,6 @@
 /*--------------Testimonial------------------*/
 .testimonial {
-  background: url(../../images/testimotian-banner.png) no-repeat;
+  background: url(../images/testimotian-banner.png) no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -20,7 +20,7 @@
   &::after {
     content: "";
     display: block;
-    background: url(../../images/testumation-icon-right.png) no-repeat;
+    background: url(../images/testumation-icon-right.png) no-repeat;
     background-size: contain;
     width: 50px;
     height: 50px;
@@ -29,7 +29,7 @@
   &::before {
     content: "";
     display: block;
-    background: url(../../images/testumation-icon-left.png) no-repeat;
+    background: url(../images/testumation-icon-left.png) no-repeat;
     background-size: contain;
     width: 50px;
     height: 50px;
