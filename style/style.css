@@ -609,6 +609,42 @@ input::placeholder {
   .team_container_icon {
     margin-bottom: 25px;
   }
+  .team_container_description_icon .container .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .fa:before {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .team_height {
+    height: 250px;
+  }
+  .team_container_img {
+    width: 50%;
+  }
+  .team_container {
+    height: 100px;
+  }
+  .fa:before {
+    font-size: 1rem;
+  }
+  .team_container_icon {
+    margin-bottom: 5px;
+  }
+  h6 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .team_container_description_text {
+    margin-bottom: 10px;
+  }
+  .team_container_description {
+    padding: 15px;
+  }
 }
 
 /*----------------TEAM---------------------*/
@@ -734,6 +770,7 @@ input::placeholder {
   }
   .testimonial_quote {
     font-size: 0.8rem;
+    margin-bottom: 0;
   }
   .testimonial_quote::before {
     width: 20px;
