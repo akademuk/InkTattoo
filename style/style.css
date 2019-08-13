@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url(c:\Users\Oleg\Desktop\Сайты для портфолио\InkTattoo\style\bootstrap-grid.min.css);
-@import url(c:\Users\Oleg\Desktop\Сайты для портфолио\InkTattoo\style\bootstrap.min.css);
+@import url(c:\Users\Oleg\Desktop\Сайтыдляпортфолио\InkTattoo\style\bootstrap-grid.min.css);
+@import url(c:\Users\Oleg\Desktop\Сайтыдляпортфолио\InkTattoo\style\bootstrap.min.css);
 body {
   width: 100%;
   margin: 0;
@@ -629,6 +629,10 @@ input::placeholder {
   .team_container {
     height: 100px;
   }
+  .team_container h2 {
+    padding: 15px 70px;
+    border: 2px solid #000;
+  }
   .fa:before {
     font-size: 1rem;
   }
@@ -644,6 +648,61 @@ input::placeholder {
   }
   .team_container_description {
     padding: 15px;
+  }
+  .description_position .team_height:nth-of-type(4) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .description_position .team_height:nth-of-type(5) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .team_container_email {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+@media (max-width: 480px) {
+  .taem {
+    background: #ccc8b6;
+  }
+  .description_position {
+    display: block;
+  }
+  .team_height {
+    height: 200px;
+    min-width: 100%;
+  }
+  .team_height:nth-of-type(3) {
+    padding-bottom: 20px;
+  }
+  .team_height:nth-of-type(5) {
+    padding-bottom: 20px;
+  }
+  .fa:before {
+    font-size: 0.5rem;
+  }
+  .team_container_img {
+    min-width: 75%;
+    margin: 0 auto;
+  }
+  .team_container_icon {
+    padding: 0;
+    height: 20px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.666667%;
+            flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .team_container_description_text {
+    margin-bottom: 0;
+  }
+  .team_container_description {
+    padding: 15px 10px 0 10px;
   }
 }
 
