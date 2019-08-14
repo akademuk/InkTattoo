@@ -129,6 +129,8 @@ input::placeholder {
     align-items: baseline;
     padding: 50px 0;
     height: 250px;
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 768px) {
@@ -206,6 +208,7 @@ input::placeholder {
   }
   .team_container_email {
     order: 3;
+    padding: 50px 0 0 0;
   }
 }
 @media (max-width: 480px) {
@@ -231,7 +234,7 @@ input::placeholder {
     }
   }
   .team_container_img {
-    min-width: 75%;
+    min-width: 60%;
     margin: 0 auto;
   }
   .team_container_icon {
@@ -244,7 +247,21 @@ input::placeholder {
     margin-bottom: 0;
   }
   .team_container_description {
-    padding: 15px 10px 0 10px;
+    padding: 15px 0 0 10px;
+  }
+  .team_container {
+    height: 100px;
+  }
+  .team_container_email {
+    padding-top: 30px;
+    background: $white;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .team_container_img {
+    min-width: 100%;
+    margin: 0;
   }
 }
 /*----------------TEAM---------------------*/

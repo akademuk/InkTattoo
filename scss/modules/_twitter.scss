@@ -1,0 +1,61 @@
+.twitter_container {
+  background: url(../../images/twitter_container.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  padding: 112px 0 124px;
+}
+.twitter_container_text {
+  width: 70%;
+  margin: 0 auto;
+  color: #ccc8b6;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: initial;
+  &::before {
+    content: "\f099";
+    color: #ccc8b6;
+    font-family: "FontAwesome";
+    font-size: 3rem;
+    font-weight: 400;
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    padding-bottom: 37px;
+  }
+}
+@media (max-width: 1200px) {
+  .twitter_container {
+    padding: 75px 0;
+  }
+}
+@media (max-width: 768px) {
+  .twitter_container {
+    margin: 0;
+    padding: 50px 15px;
+  }
+  .twitter_container_text {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .twitter_container_text {
+    &:before {
+      font-size: 2rem;
+    }
+  }
+  .twitter_container {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .twitter_container_text {
+    font-size: 0.7rem;
+    &:before {
+      font-size: 1.5rem;
+    }
+  }
+}
