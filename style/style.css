@@ -289,7 +289,6 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   opacity: 0;
-  z-index: -1;
   width: 100%;
   height: 100%;
   -webkit-transition: all 0.5s linear;
@@ -337,7 +336,7 @@ h2 {
 
 @media (max-width: 768px) {
   .about_us_tittle {
-    min-height: 25vh;
+    min-height: auto;
     margin-bottom: 30px;
   }
   h2 {
@@ -398,8 +397,7 @@ h2 {
 
 @media (max-width: 450px) {
   .about_us_tittle {
-    min-height: 30vh;
-    padding: 0;
+    padding: 20px;
     margin-bottom: 20px;
   }
   .about_us_information_tittle {
@@ -419,6 +417,107 @@ h2 {
   }
 }
 
+/*-------------------Gallery start-----------------------*/
+.gallery {
+  background: #afac9c;
+  max-width: 100%;
+}
+
+.gallery .container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery .container .row {
+  padding: 0;
+  margin: 0;
+}
+
+.gallery .container .col-lg-2 {
+  min-width: 20%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.gallery .container .col-lg-2:nth-of-type(1) {
+  min-width: 40%;
+}
+
+.gallery_tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery_tittle h2 {
+  padding: 37px 54px 39px 70px;
+}
+
+.gallery_img_container {
+  position: relative;
+}
+
+.gallery_img_container img {
+  min-width: 100%;
+  height: 300px;
+}
+
+.gallery_img_container .gallery_icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: rgba(204, 200, 184, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.gallery_img_container:hover {
+  cursor: pointer;
+}
+
+.gallery_img_container:hover .gallery_icon {
+  opacity: 1;
+  z-index: 99;
+  position: absolute;
+  background: rgba(204, 200, 184, 0.6);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+@media (max-width: 1200px) {
+  .gallery_img_container img {
+    margin-left: -50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery_tittle {
+    height: 100px;
+  }
+  .gallery_tittle h2 {
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .gallery_img_container {
+    height: 150px;
+  }
+  .gallery_img_container img {
+    margin-left: -100px;
+  }
+}
+
+/*-------------------Gallery end-----------------------*/
 /*----------------TEAM---------------------*/
 .taem .container {
   min-width: 100%;
@@ -900,7 +999,7 @@ input::placeholder {
 
 /*--------------Testimonial------------------*/
 .twitter_container {
-  background: url(../../images/twitter_container.png) no-repeat;
+  background: url(../images/twitter_container.png) no-repeat;
   background-size: cover;
   background-position: center;
   max-width: 100%;
