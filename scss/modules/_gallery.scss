@@ -31,10 +31,6 @@
 }
 .gallery_img_container {
   position: relative;
-  img {
-    min-width: 100%;
-    height: 300px;
-  }
   .gallery_icon {
     position: absolute;
     top: 0;
@@ -55,26 +51,11 @@
     }
   }
 }
-@media (max-width: 1200px) {
-  .gallery_img_container {
-    img {
-      margin-left: -50px;
-    }
-  }
-}
 @media (max-width: 768px) {
   .gallery_tittle {
     height: 100px;
     h2 {
       padding: 10px 30px;
-    }
-  }
-}
-@media (max-width: 450px) {
-  .gallery_img_container {
-    height: 150px;
-    img {
-      margin-left: -100px;
     }
   }
 }
