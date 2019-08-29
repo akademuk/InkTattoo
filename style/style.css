@@ -375,7 +375,6 @@ h6 {
 @media (max-width: 576px) {
   .about_us_top_container {
     display: block;
-    min-height: inherit;
   }
   .about_us_tittle {
     background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.5))), url(../images/img_studio_bg.png);
@@ -408,9 +407,6 @@ h6 {
 }
 
 @media (max-width: 480px) {
-  .gallery_icon {
-    padding-top: inherit;
-  }
   .fa:before {
     font-size: 0.7rem !important;
   }
