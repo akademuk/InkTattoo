@@ -278,6 +278,7 @@ h6 {
   display: flex;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .aboout_us_gallery_container:hover {
