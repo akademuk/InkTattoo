@@ -1,0 +1,254 @@
+/*-------------------Contact start-----------------------*/
+.contact {
+  padding: 183px 0 153px;
+  background-color: $blackWhite;
+  .wrapper {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      padding: 35px;
+      max-width: 70%;
+      margin: 0 auto 75px;
+      text-align: center;
+    }
+  }
+  .contact_information {
+    min-width: 55%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact_contact_text {
+    width: 80%;
+    margin: 0 auto 65px;
+    color: $black;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .contact_contact_information {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 126px;
+    div {
+      max-width: 45%;
+    }
+  }
+  .contact_list_left_item,
+  .contact_list_right_item {
+    list-style: none;
+    text-align: left;
+  }
+  .contact_list_left,
+  .contact_list_right {
+    padding: 0;
+    align-items: left;
+    li {
+      &:nth-of-type(1) {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+    }
+    li {
+      font-weight: 400;
+      text-transform: uppercase;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .contact_contact_icon {
+    .container {
+      .row {
+        max-width: 80%;
+        margin: 0 auto;
+        .team_container_icon {
+          &:hover {
+            transform: rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+}
+.contact_form {
+  min-width: 45%;
+  margin-left: 0;
+  padding-left: 50px;
+  input {
+    display: block;
+    width: 78%;
+    border: 2px solid $black;
+    padding: 25px 0 25px 18px;
+    margin-bottom: 60px;
+    background-color: $blackWhite;
+    color: #333;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .contact_form_submit {
+    width: 60%;
+    border: none;
+    background-color: #9a977a;
+    color: $white;
+  }
+}
+textarea {
+  width: 78%;
+  border: 2px solid $black;
+  padding: 22px 0 0 18px;
+  margin-bottom: 60px;
+  background-color: $blackWhite;
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  .contact {
+    .wrapper {
+      display: block;
+      .contact_contact_information {
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .team_container_icon {
+    margin-bottom: 40px;
+  }
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    input {
+      width: 45%;
+      &:nth-of-type(1) {
+        margin-right: 50px;
+      }
+    }
+    .contact_form_submit {
+      width: 25%;
+    }
+  }
+  textarea {
+    width: 45%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 50px;
+  }
+  .contact_information {
+    h2 {
+      border: 3px solid $black;
+      padding: 15px 25px !important;
+      font-size: 1.2rem;
+    }
+  }
+  .contact_form {
+    input {
+      padding: 15px 0 15px 18px;
+      margin-bottom: 30px;
+    }
+    .contact_form_submit {
+      padding: 0;
+      line-height: 4;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .contact_information {
+    h2 {
+      margin-bottom: 30px !important;
+      font-size: 1.2rem;
+      border: 3px solid $black;
+    }
+  }
+  .contact_contact_text {
+    margin-bottom: 20px;
+  }
+  .contact {
+    padding-bottom: 50px;
+    .wrapper {
+      max-width: 95%;
+      .contact_contact_information {
+        display: block;
+        margin-bottom: 15px;
+        .contact_contact_information_info,
+        .contact_contact_information_work {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .contact_list_left,
+  .contact_list_right {
+    padding: 0;
+    align-items: left;
+    li {
+      font-size: 0.6rem;
+    }
+  }
+  textarea {
+    position: static;
+    width: 75%;
+    margin-bottom: 10px;
+    padding: 5px 0 5px 5px;
+    height: 100px;
+    border: 2px solid #9a977a;
+  }
+  .contact_form {
+    padding: 0%;
+    align-items: center;
+    input {
+      width: 75%;
+      margin-bottom: 10px;
+      padding: 5px 0 5px 5px;
+      border: 2px solid #9a977a;
+      &:nth-of-type(1) {
+        margin-right: 0;
+      }
+    }
+  }
+  .contact_contact_text {
+    font-size: 0.8rem !important;
+  }
+  .contact_contact_icon {
+    .container {
+      padding: 0;
+      .row {
+        .team_container_icon {
+          i {
+            &::before {
+              font-size: 1rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact_form_submit {
+    width: 50% !important;
+  }
+  .contact_list_left,
+  .contact_list_right {
+    li {
+      &:nth-of-type(1) {
+        text-align: center;
+      }
+    }
+  }
+}
+/*-------------------Contact end-----------------------*/

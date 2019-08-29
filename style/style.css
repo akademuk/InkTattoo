@@ -334,14 +334,14 @@ h6 {
   .about_us_tittle {
     max-width: 40%;
   }
-  .about_us_information {
-    width: 100%;
-    padding: 60px 20px;
-  }
-  h2 {
+  .about_us_tittle h2 {
     font-size: 1.5rem;
     border: 7px solid #000;
     padding: 25px 40px;
+  }
+  .about_us_information {
+    width: 100%;
+    padding: 60px 20px;
   }
 }
 
@@ -382,8 +382,8 @@ h6 {
     min-height: inherit;
   }
   .about_us_tittle {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.5))), url(../../images/img_studio_bg.png);
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.5)), url(../../images/img_studio_bg.png);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.5))), url(../images/img_studio_bg.png);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5)), url(../images/img_studio_bg.png);
     background-position: center;
     max-width: auto;
     min-width: 100%;
@@ -426,6 +426,283 @@ h6 {
   }
 }
 
+/*-------------------Contact start-----------------------*/
+.contact {
+  padding: 183px 0 153px;
+  background-color: #e7e5d0;
+}
+
+.contact .wrapper {
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .wrapper h2 {
+  padding: 35px;
+  max-width: 70%;
+  margin: 0 auto 75px;
+  text-align: center;
+}
+
+.contact .contact_information {
+  min-width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.contact .contact_contact_text {
+  width: 80%;
+  margin: 0 auto 65px;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.contact .contact_contact_information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 126px;
+}
+
+.contact .contact_contact_information div {
+  max-width: 45%;
+}
+
+.contact .contact_list_left_item,
+.contact .contact_list_right_item {
+  list-style: none;
+  text-align: left;
+}
+
+.contact .contact_list_left,
+.contact .contact_list_right {
+  padding: 0;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.contact .contact_list_left li:nth-of-type(1),
+.contact .contact_list_right li:nth-of-type(1) {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contact .contact_list_left li,
+.contact .contact_list_right li {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contact .contact_list_left li span,
+.contact .contact_list_right li span {
+  font-weight: 600;
+}
+
+.contact .contact_contact_icon .container .row {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.contact .contact_contact_icon .container .row .team_container_icon:hover {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.contact_form {
+  min-width: 45%;
+  margin-left: 0;
+  padding-left: 50px;
+}
+
+.contact_form input {
+  display: block;
+  width: 78%;
+  border: 2px solid #000;
+  padding: 25px 0 25px 18px;
+  margin-bottom: 60px;
+  background-color: #e7e5d0;
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.contact_form .contact_form_submit {
+  width: 60%;
+  border: none;
+  background-color: #9a977a;
+  color: #fff;
+}
+
+textarea {
+  width: 78%;
+  border: 2px solid #000;
+  padding: 22px 0 0 18px;
+  margin-bottom: 60px;
+  background-color: #e7e5d0;
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .contact .wrapper {
+    display: block;
+  }
+  .contact .wrapper .contact_contact_information {
+    margin-bottom: 40px;
+  }
+  .team_container_icon {
+    margin-bottom: 40px;
+  }
+  .contact_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+  .contact_form input {
+    width: 45%;
+  }
+  .contact_form input:nth-of-type(1) {
+    margin-right: 50px;
+  }
+  .contact_form .contact_form_submit {
+    width: 25%;
+  }
+  textarea {
+    width: 45%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 50px;
+  }
+  .contact_information h2 {
+    border: 3px solid #000;
+    padding: 15px 25px !important;
+    font-size: 1.2rem;
+  }
+  .contact_form input {
+    padding: 15px 0 15px 18px;
+    margin-bottom: 30px;
+  }
+  .contact_form .contact_form_submit {
+    padding: 0;
+    line-height: 4;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact_information h2 {
+    margin-bottom: 30px !important;
+    font-size: 1.2rem;
+    border: 3px solid #000;
+  }
+  .contact_contact_text {
+    margin-bottom: 20px;
+  }
+  .contact {
+    padding-bottom: 50px;
+  }
+  .contact .wrapper {
+    max-width: 95%;
+  }
+  .contact .wrapper .contact_contact_information {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .contact .wrapper .contact_contact_information .contact_contact_information_info,
+  .contact .wrapper .contact_contact_information .contact_contact_information_work {
+    max-width: 100%;
+  }
+  .contact_list_left,
+  .contact_list_right {
+    padding: 0;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+  }
+  .contact_list_left li,
+  .contact_list_right li {
+    font-size: 0.6rem;
+  }
+  textarea {
+    position: static;
+    width: 75%;
+    margin-bottom: 10px;
+    padding: 5px 0 5px 5px;
+    height: 100px;
+    border: 2px solid #9a977a;
+  }
+  .contact_form {
+    padding: 0%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact_form input {
+    width: 75%;
+    margin-bottom: 10px;
+    padding: 5px 0 5px 5px;
+    border: 2px solid #9a977a;
+  }
+  .contact_form input:nth-of-type(1) {
+    margin-right: 0;
+  }
+  .contact_contact_text {
+    font-size: 0.8rem !important;
+  }
+  .contact_contact_icon .container {
+    padding: 0;
+  }
+  .contact_contact_icon .container .row .team_container_icon i::before {
+    font-size: 1rem !important;
+  }
+  .contact_form_submit {
+    width: 50% !important;
+  }
+  .contact_list_left li:nth-of-type(1),
+  .contact_list_right li:nth-of-type(1) {
+    text-align: center;
+  }
+}
+
+/*-------------------Contact end-----------------------*/
 /*-------------------Gallery start-----------------------*/
 .gallery {
   background: #afac9c;
@@ -498,11 +775,22 @@ h6 {
 }
 
 @media (max-width: 768px) {
+  .gallery {
+    background-color: #e7e5d0;
+  }
   .gallery_tittle {
     height: 100px;
   }
   .gallery_tittle h2 {
     padding: 10px 30px;
+    border: 5px solid #000;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery_tittle h2 {
+    font-size: 1.2rem;
+    border: 3px solid #000;
   }
 }
 
@@ -626,7 +914,7 @@ h6 {
   text-transform: uppercase;
 }
 
-input {
+.team_container_email_form input {
   width: 100%;
 }
 
@@ -746,7 +1034,7 @@ input {
 
 @media (max-width: 768px) {
   .taem {
-    background: url(../../images/team_team_banner.png);
+    background: url(../images/team_team_banner.png);
     min-width: 100%;
     background-size: cover;
     background-position: center;
@@ -766,7 +1054,8 @@ input {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     border: 3px solid #000;
-    padding: 15px 45px;
+    padding: 15px 25px !important;
+    font-size: 1.2rem;
   }
   .team_container_information {
     display: block;
@@ -817,9 +1106,13 @@ input {
     width: 100%;
     margin: 0 auto;
   }
+  .team_container_tittle h2 {
+    font-size: 1.2rem;
+    border: 3px solid #000;
+    padding: 15px 25px !important;
+  }
 }
 
-/*----------------TEAM---------------------*/
 /*--------------Testimonial------------------*/
 .testimonial {
   background: url(../images/testimotian-banner.png) no-repeat;

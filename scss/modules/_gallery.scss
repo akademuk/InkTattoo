@@ -52,10 +52,22 @@
   }
 }
 @media (max-width: 768px) {
+  .gallery {
+    background-color: $blackWhite;
+  }
   .gallery_tittle {
     height: 100px;
     h2 {
       padding: 10px 30px;
+      border: 5px solid $black;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .gallery_tittle {
+    h2 {
+      font-size: 1.2rem;
+      border: 3px solid $black;
     }
   }
 }

@@ -72,8 +72,10 @@
   line-height: 12px;
   text-transform: uppercase;
 }
-input {
-  width: 100%;
+.team_container_email_form {
+  input {
+    width: 100%;
+  }
 }
 .email {
   border: 1px solid $black;
@@ -167,7 +169,7 @@ input {
 }
 @media (max-width: 768px) {
   .taem {
-    background: url(../../images/team_team_banner.png);
+    background: url(../images/team_team_banner.png);
     min-width: 100%;
     background-size: cover;
     background-position: center;
@@ -183,7 +185,8 @@ input {
       h2 {
         transform: rotate(0deg);
         border: 3px solid $black;
-        padding: 15px 45px;
+        padding: 15px 25px !important;
+        font-size: 1.2rem;
       }
     }
   }
@@ -249,5 +252,11 @@ input {
       margin: 0 auto;
     }
   }
+  .team_container_tittle {
+    h2 {
+      font-size: 1.2rem;
+      border: 3px solid $black;
+      padding: 15px 25px !important;
+    }
+  }
 }
-/*----------------TEAM---------------------*/
