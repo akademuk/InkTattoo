@@ -214,10 +214,13 @@
   .team_container_information_img {
     img {
       border-radius: 50%;
+      min-width: 50%;
+      margin: 0 auto;
     }
   }
   .team_container_icon {
     text-align: center !important;
+    margin-bottom: 0;
     i {
       &:before {
         font-size: 1.5rem;

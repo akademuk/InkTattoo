@@ -83,7 +83,7 @@
     display: block;
     width: 78%;
     border: 2px solid $black;
-    padding: 25px 0 25px 18px;
+    padding: 18px 0 18px 18px;
     margin-bottom: 60px;
     background-color: $blackWhite;
     color: #333;
@@ -97,6 +97,7 @@
     border: none;
     background-color: #9a977a;
     color: $white;
+    margin-bottom: 0;
   }
 }
 textarea {
