@@ -263,3 +263,21 @@
     }
   }
 }
+@media screen and (orientation: landscape) {
+  .team_container_information_img {
+    .team_img {
+      width: 50%;
+    }
+  }
+  .team_container_email {
+    .wrapper {
+      width: 50%;
+    }
+  }
+  .submit {
+    width: 50% !important;
+    padding: 5px 0;
+    border-radius: 10px;
+    margin-left: 23%;
+  }
+}

@@ -26,9 +26,9 @@
   border-bottom: 2px solid transparent;
   transition: all 0.5s;
   &:hover {
-    color: $black;
+    color: $nero;
     text-decoration: none;
-    border-bottom: 2px solid $black;
+    border-bottom: 2px solid $nero;
     transition: all 0.5s;
   }
 }
@@ -72,6 +72,9 @@
     .footer_navigation_tittle {
       margin-bottom: 0;
     }
+  }
+  .footer_navigation_link_logotype {
+    max-width: 220px;
   }
 }
 /*----------------------- FOOTER end ----------------------*/
